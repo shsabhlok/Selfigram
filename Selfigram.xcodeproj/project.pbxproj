@@ -10,10 +10,10 @@
 		98E955861CEEA778000175E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E955851CEEA778000175E1 /* AppDelegate.swift */; };
 		98E955881CEEA778000175E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E955871CEEA778000175E1 /* ViewController.swift */; };
 		98E9558B1CEEA778000175E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E955891CEEA778000175E1 /* Main.storyboard */; };
-		98E9558D1CEEA778000175E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E9558C1CEEA778000175E1 /* Assets.xcassets */; };
 		98E955901CEEA778000175E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E9558E1CEEA778000175E1 /* LaunchScreen.storyboard */; };
 		98E9559B1CEEA778000175E1 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9559A1CEEA778000175E1 /* SelfigramTests.swift */; };
 		98E955A61CEEA778000175E1 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E955A51CEEA778000175E1 /* SelfigramUITests.swift */; };
+		98E955B41CEEAEE8000175E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E955B31CEEAEE8000175E1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		98E955851CEEA778000175E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E955871CEEA778000175E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98E9558A1CEEA778000175E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98E9558C1CEEA778000175E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98E9558F1CEEA778000175E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98E955911CEEA778000175E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E955961CEEA778000175E1 /* SelfigramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		98E955A11CEEA778000175E1 /* SelfigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E955A51CEEA778000175E1 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		98E955A71CEEA778000175E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E955B31CEEAEE8000175E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +97,10 @@
 		98E955841CEEA778000175E1 /* Selfigram */ = {
 			isa = PBXGroup;
 			children = (
+				98E955B31CEEAEE8000175E1 /* Assets.xcassets */,
 				98E955851CEEA778000175E1 /* AppDelegate.swift */,
 				98E955871CEEA778000175E1 /* ViewController.swift */,
 				98E955891CEEA778000175E1 /* Main.storyboard */,
-				98E9558C1CEEA778000175E1 /* Assets.xcassets */,
 				98E9558E1CEEA778000175E1 /* LaunchScreen.storyboard */,
 				98E955911CEEA778000175E1 /* Info.plist */,
 			);
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E955901CEEA778000175E1 /* LaunchScreen.storyboard in Resources */,
-				98E9558D1CEEA778000175E1 /* Assets.xcassets in Resources */,
+				98E955B41CEEAEE8000175E1 /* Assets.xcassets in Resources */,
 				98E9558B1CEEA778000175E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
