@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="758" y="-72"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="jaq-2r-OhK">
             <objects>
-                <viewController id="old-Fh-pva" sceneMemberID="viewController">
+                <viewController id="old-Fh-pva" customClass="ProfileViewController" customModule="Selfigram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ArR-hm-jjP"/>
                         <viewControllerLayoutGuide type="bottom" id="Kf8-XJ-4KJ"/>
@@ -74,9 +74,55 @@
                     <view key="view" contentMode="scaleToFill" id="dj0-1l-Rw5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="EN5-h2-agk">
+                                <rect key="frame" x="210" y="110" width="180" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="4Nw-FB-t4p"/>
+                                    <constraint firstAttribute="height" constant="185" id="ZN4-jz-KAm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icw-XQ-uxU">
+                                <rect key="frame" x="262" y="326" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th7-dz-dUx">
+                                <rect key="frame" x="216" y="289" width="168" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aeY-zE-fTY"/>
+                                    <constraint firstAttribute="width" constant="168" id="rjy-fz-tP8"/>
+                                </constraints>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed:" destination="old-Fh-pva" eventType="touchUpInside" id="riy-9a-dps"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EN5-h2-agk" firstAttribute="leading" secondItem="Th7-dz-dUx" secondAttribute="trailing" constant="-54" id="2Jo-NT-7C1"/>
+                            <constraint firstItem="icw-XQ-uxU" firstAttribute="centerX" secondItem="dj0-1l-Rw5" secondAttribute="centerX" id="Ftj-Tc-xX4"/>
+                            <constraint firstItem="icw-XQ-uxU" firstAttribute="top" secondItem="EN5-h2-agk" secondAttribute="bottom" constant="31" id="VrU-3y-aiU"/>
+                            <constraint firstItem="Th7-dz-dUx" firstAttribute="top" secondItem="EN5-h2-agk" secondAttribute="bottom" constant="-6" id="aQN-TC-YJq"/>
+                            <constraint firstItem="Th7-dz-dUx" firstAttribute="centerX" secondItem="EN5-h2-agk" secondAttribute="centerX" id="ibV-FD-PbH"/>
+                            <constraint firstItem="EN5-h2-agk" firstAttribute="centerX" secondItem="dj0-1l-Rw5" secondAttribute="centerX" id="p1J-ZV-Mev"/>
+                            <constraint firstItem="Th7-dz-dUx" firstAttribute="top" secondItem="EN5-h2-agk" secondAttribute="bottom" constant="-14" id="qnD-4q-D1h"/>
+                            <constraint firstItem="EN5-h2-agk" firstAttribute="top" secondItem="ArR-hm-jjP" secondAttribute="bottom" constant="46" id="ruX-SX-4u6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Jo-NT-7C1"/>
+                                <exclude reference="qnD-4q-D1h"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="kyU-Sl-sqh"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="EN5-h2-agk" id="9oU-6t-jEs"/>
+                        <outlet property="usernameLabel" destination="icw-XQ-uxU" id="FN8-bt-TGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGz-bz-pwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,5 +215,6 @@
         <image name="Activities" width="25" height="25"/>
         <image name="NewsFeed" width="25" height="25"/>
         <image name="Profile" width="25" height="25"/>
+        <image name="placeholder" width="256" height="256"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
 		98E9559B1CEEA778000175E1 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E9559A1CEEA778000175E1 /* SelfigramTests.swift */; };
 		98E955A61CEEA778000175E1 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E955A51CEEA778000175E1 /* SelfigramUITests.swift */; };
 		98E955B41CEEAEE8000175E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E955B31CEEAEE8000175E1 /* Assets.xcassets */; };
+		98F49D851CF54495008BAF3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F49D841CF54495008BAF3E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		98E955A51CEEA778000175E1 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		98E955A71CEEA778000175E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E955B31CEEAEE8000175E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98F49D841CF54495008BAF3E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				98E955851CEEA778000175E1 /* AppDelegate.swift */,
 				98E955871CEEA778000175E1 /* ViewController.swift */,
 				98E955891CEEA778000175E1 /* Main.storyboard */,
+				98F49D841CF54495008BAF3E /* ProfileViewController.swift */,
 				98E9558E1CEEA778000175E1 /* LaunchScreen.storyboard */,
 				98E955911CEEA778000175E1 /* Info.plist */,
 			);
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					98E955811CEEA776000175E1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CUK79CE678;
 					};
 					98E955951CEEA778000175E1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F49D851CF54495008BAF3E /* ProfileViewController.swift in Sources */,
 				98E955881CEEA778000175E1 /* ViewController.swift in Sources */,
 				98E955861CEEA778000175E1 /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Selfigram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ssabhlok.Selfigram;
+				PRODUCT_BUNDLE_IDENTIFIER = ssabhlok1.Selfigram.ca;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Selfigram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ssabhlok.Selfigram;
+				PRODUCT_BUNDLE_IDENTIFIER = ssabhlok1.Selfigram.ca;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +493,7 @@
 				98E955AC1CEEA778000175E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98E955AD1CEEA778000175E1 /* Build configuration list for PBXNativeTarget "SelfigramTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +502,7 @@
 				98E955AF1CEEA778000175E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98E955B01CEEA778000175E1 /* Build configuration list for PBXNativeTarget "SelfigramUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				98E955B21CEEA778000175E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
